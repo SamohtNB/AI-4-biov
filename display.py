@@ -11,6 +11,8 @@ def load_data():
     
 
 def display():
+    
+    
     st.title("AI 4 biov")
     st.write("Ceci est la partie frontend du projet")
     st.markdown("""
@@ -30,6 +32,9 @@ def display():
     
     st.map(data_map, zoom=5, use_container_width=True)
     
+    if st.button("signaler une décharge sauvage"):
+        st.file_uploader("Télécharger une image de la décharge sauvage", type=["jpg", "jpeg", "png"])
+        st.write("Merci de votre contribution !")
 
 if __name__ == "__main__":
     display()
