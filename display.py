@@ -33,7 +33,7 @@ def display():
     st.map(data_map, zoom=5, use_container_width=True)
     
     if st.button("signaler une décharge sauvage"):
-        st.file_uploader("Télécharger une image de la décharge sauvage", type=["jpg", "jpeg", "png"])
+        file_public_waste = st.file_uploader("Télécharger une image de la décharge sauvage", type=["jpg", "jpeg", "png"])
         st.write("Merci de votre contribution !")
 
 if __name__ == "__main__":
