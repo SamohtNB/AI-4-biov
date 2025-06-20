@@ -25,6 +25,8 @@ def page_accueil():
         - Pandas pour la manipulation des données
         
         ceci est une maquette pour montrer la partie frontend du projet.
+        
+        sur le côté gauche, vous pouvez naviguer entre les différentes pages du projet.
         """)
     
     elif menu == "Carte des Décharges Sauvages":
